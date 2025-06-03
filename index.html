@@ -1,30 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy | Hank Sent Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy - Hank Sent Me</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            margin: 2rem;
+            line-height: 1.6;
+            max-width: 700px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
-<body style="font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem;">
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> June 1, 2025</p>
-    <p>
-        <strong>Hank Sent Me</strong> is a Chrome Extension that helps users score the strength of mutual LinkedIn
-        connections based on publicly visible profile information.
-    </p>
-    <p>
-        This extension does not collect, store, or transmit any personal information, credentials, or private LinkedIn
-        data. All processing occurs locally within the user browser. No data is sent to any external server or third
-        party.
-    </p>
-    <p>
-        Hank only analyzes DOM elements visible to any logged-in LinkedIn user and discards all data when the popup is
-        closed.
-    </p>
-    <p>
-        For questions or concerns, contact: kahlildotashantiatgmaildotcom.
-    </p>
+<body>
+    <h1>Privacy Policy for <em>Hank Sent Me</em></h1>
+    <p><strong>Effective Date:</strong> June 3, 2025</p>
+
+    <p><em>Hank Sent Me</em> is a Chrome extension that helps users assess the strength of mutual connections on
+        LinkedIn based on visible page content.</p>
+
+    <h2>What the Extension Does</h2>
+    <ul>
+        <li>Detects mutual connections on LinkedIn profile and search result pages.</li>
+        <li>Scores the top 10 mutual connections using page visibility and position.</li>
+        <li>Displays the results in a popup interface.</li>
+        <li>All processing is done locally on your device.</li>
+    </ul>
+
+    <h2>What We Do Not Do</h2>
+    <ul>
+        <li>We do <strong>not</strong> collect or transmit any personal data.</li>
+        <li>No data is stored remotely or synced.</li>
+        <li>We do <strong>not</strong> access private messages or LinkedIn APIs.</li>
+        <li>We do <strong>not</strong> inject or run remote scripts.</li>
+    </ul>
+
+    <h2>Chrome Permissions Requested</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Why It Is Needed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>activeTab</code></td>
+                <td>To determine if the current tab is a profile or mutuals page so the extension can behave
+                    appropriately.</td>
+            </tr>
+            <tr>
+                <td><code>storage</code></td>
+                <td>To temporarily store mutual connections while the popup is open.</td>
+            </tr>
+            <tr>
+                <td><code>host_permissions</code></td>
+                <td>To read public LinkedIn DOM content. No login info or private data is accessed.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Contact</h2>
+    <p>For support or questions, email: <code>kahlil [dot] ashanti [at] gmail [dot] com</code></p>
 </body>
 
 </html>
