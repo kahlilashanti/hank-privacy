@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy - Hank Sent Me</title>
+    <title>Privacy Policy - Side Reader</title>
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -45,26 +45,24 @@
 </head>
 
 <body>
-    <h1>Privacy Policy for <em>Hank Sent Me</em></h1>
-    <p><strong>Effective Date:</strong> June 3, 2025</p>
+    <h1>Privacy Policy for <em>Side Reader</em></h1>
+    <p><strong>Effective Date:</strong> June 27, 2025</p>
 
-    <p><em>Hank Sent Me</em> is a Chrome extension that helps users assess the strength of mutual connections on
-        LinkedIn based on visible page content.</p>
+    <p><em>Side Reader</em> is a Chrome extension that helps actors rehearse lines using AI voice playback. Users can
+        paste dialogue into the extension, choose a voice, and play each line aloud.</p>
 
     <h2>What the Extension Does</h2>
     <ul>
-        <li>Detects mutual connections on LinkedIn profile and search result pages.</li>
-        <li>Scores the top 10 mutual connections using page visibility and position.</li>
-        <li>Displays the results in a popup interface.</li>
-        <li>All processing is done locally on your device.</li>
+        <li>Lets users paste a scene and play it back line-by-line using AI-generated voices.</li>
+        <li>Routes text to a secure proxy server which interacts with ElevenLabs for speech synthesis.</li>
+        <li>Plays back generated audio in the browser—nothing is downloaded or stored automatically.</li>
     </ul>
 
     <h2>What We Do Not Do</h2>
     <ul>
-        <li>We do <strong>not</strong> collect or transmit any personal data.</li>
-        <li>No data is stored remotely or synced.</li>
-        <li>We do <strong>not</strong> access private messages or LinkedIn APIs.</li>
-        <li>We do <strong>not</strong> inject or run remote scripts.</li>
+        <li>We do <strong>not</strong> collect or store any personal information or script data.</li>
+        <li>We do <strong>not</strong> analyze or share what you input into the extension.</li>
+        <li>We do <strong>not</strong> use any tracking cookies or third-party analytics.</li>
     </ul>
 
     <h2>Chrome Permissions Requested</h2>
@@ -77,23 +75,15 @@
         </thead>
         <tbody>
             <tr>
-                <td><code>activeTab</code></td>
-                <td>To determine if the current tab is a profile or mutuals page so the extension can behave
-                    appropriately.</td>
-            </tr>
-            <tr>
-                <td><code>storage</code></td>
-                <td>To temporarily store mutual connections while the popup is open.</td>
-            </tr>
-            <tr>
                 <td><code>host_permissions</code></td>
-                <td>To read public LinkedIn DOM content. No login info or private data is accessed.</td>
+                <td>To securely connect to the proxy server for voice playback (e.g.
+                    https://side-reader-proxy.vercel.app).</td>
             </tr>
         </tbody>
     </table>
 
     <h2>Contact</h2>
-    <p>For support or questions, email: <code>kahlil [dot] ashanti [at] gmail [dot] com</code></p>
+    <p>Have a question or suggestion? Email: <code>kahlil [dot] ashanti [at] gmail [dot] com</code></p>
 </body>
 
 </html>
